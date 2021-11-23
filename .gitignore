@@ -1,0 +1,6 @@
+*.csv
+*.gz
+papertrail-archives.json
+data/script/*
+data/task/*
+data/task-*.json
