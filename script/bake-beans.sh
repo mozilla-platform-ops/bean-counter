@@ -4,7 +4,7 @@ mkdir ./task
 
 ye=2021
 for mo in ${ye}-{01..12}; do
-  for dt in ${mo}-{01..31}; do
+  for dt in ${mo}-{31..01}; do
     for hr in ${dt}-{00..23}; do
       echo "- ${hr}"
       if [ -s ${mo}/${dt}/${hr}.csv ]; then

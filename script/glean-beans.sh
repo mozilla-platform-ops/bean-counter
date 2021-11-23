@@ -1,11 +1,10 @@
 #!/bin/bash
 
 local_archive=/home/grenade/pt-logs/pt-logs
-remote_archive=192.168.0.106:/home/grenade/pt-logs
 
 ye=2021
 #for mo in ${ye}-{01..12}; do
-for mo in ${ye}-10; do
+for mo in ${ye}-{11,09,08}; do
   for dt in ${mo}-{01..31}; do
     echo "- ${dt}"
     mkdir -p ${mo}/${dt}
@@ -22,15 +21,14 @@ for mo in ${ye}-10; do
         fi
         if [ ! -s ${archive} ] || ! gzip -t ${archive}; then
           url=https://papertrailapp.com/api/v1/archives/${dthr}/download
-          if scp ${remote_archive}/${bname} ${archive} && gzip -t ${archive}; then
-            echo "    - ${archive} fetched from ${remote_archive}/${bname}"
-          elif curl -sL \
+          if curl \
             -H "X-Papertrail-Token: $(pass Mozilla/papertrail/grenade-token)" \
-            -o ${archive}
-            ${url} && gzip -t ${archive}; then
+            -o ${archive} \
+            -L ${url} && gzip -t ${archive}; then
             echo "    - ${archive} fetched from ${url}"
           else
             echo "    - failed to fetch ${archive} from ${url}"
+            [ -f ${archive} ] && rm ${archive}
           fi
         else
           echo "    - ${archive} detected locally"
