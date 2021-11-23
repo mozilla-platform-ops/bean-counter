@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bean-counter/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/bean-counter/static/js/main.e9a142b0.chunk.js",
+    "main.js.map": "/bean-counter/static/js/main.e9a142b0.chunk.js.map",
+    "runtime-main.js": "/bean-counter/static/js/runtime-main.a2dfc52e.js",
+    "runtime-main.js.map": "/bean-counter/static/js/runtime-main.a2dfc52e.js.map",
+    "static/css/2.4659568d.chunk.css": "/bean-counter/static/css/2.4659568d.chunk.css",
+    "static/js/2.137694ef.chunk.js": "/bean-counter/static/js/2.137694ef.chunk.js",
+    "static/js/2.137694ef.chunk.js.map": "/bean-counter/static/js/2.137694ef.chunk.js.map",
+    "static/js/3.6b235892.chunk.js": "/bean-counter/static/js/3.6b235892.chunk.js",
+    "static/js/3.6b235892.chunk.js.map": "/bean-counter/static/js/3.6b235892.chunk.js.map",
+    "index.html": "/bean-counter/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/bean-counter/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/bean-counter/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.137694ef.chunk.js.LICENSE.txt": "/bean-counter/static/js/2.137694ef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2dfc52e.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.137694ef.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.e9a142b0.chunk.js"
+  ]
+}
