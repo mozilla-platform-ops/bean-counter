@@ -2558,5 +2558,105 @@
     "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
     "tasks": 4,
     "period": "2021-10-28"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 2,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 3,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "comm-t/t-win10-64",
+    "tasks": 80,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "comm-t/t-win7-32",
+    "tasks": 56,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 38,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 509,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/t-win10-64-source",
+    "tasks": 1,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 82,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 43,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 3896,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 1259,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 39,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 122,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 8,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 27,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 858,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 827,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 134,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 1061,
+    "period": "2021-10-29"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 3,
+    "period": "2021-10-29"
   }
 ]
