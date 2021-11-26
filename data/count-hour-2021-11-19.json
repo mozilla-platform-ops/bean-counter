@@ -553,5 +553,335 @@
     "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
     "tasks": 19,
     "period": "2021-11-19-08"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 1,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 299,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 2,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 55,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 18,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 3,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 99,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 51,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 4,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 131,
+    "period": "2021-11-19-09"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 1,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 36,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 8,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 3,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 348,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 147,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 8,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 2,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 3,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 13,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 1,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 45,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 6,
+    "period": "2021-11-19-10"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 58,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 7,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 81,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 7,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 4,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 307,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 171,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 19,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 1,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "mpd001-3/b-win2012",
+    "tasks": 1,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 1,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 10,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 135,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 3,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 301,
+    "period": "2021-11-19-11"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 5,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 5,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 12,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 495,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 74,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 4,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 3,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 1,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 1,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 4,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 81,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 32,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 1,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 96,
+    "period": "2021-11-19-14"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 1,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-2/b-win2012",
+    "tasks": 1,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 8,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 10,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 4,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 549,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 210,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 15,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 1,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 125,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 53,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 32,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 185,
+    "period": "2021-11-19-15"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 1,
+    "period": "2021-11-19-15"
   }
 ]
