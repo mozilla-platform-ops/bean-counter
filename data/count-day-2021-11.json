@@ -1783,5 +1783,110 @@
     "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
     "tasks": 6,
     "period": "2021-11-18"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 3,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 65,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 110,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-2/b-win2012",
+    "tasks": 2,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 589,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 175,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 93,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 8772,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 2904,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 202,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 196,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 62,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "gecko-t/win10-64-azure-ssd-checkouttest",
+    "tasks": 3,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "mpd001-3/b-win2012",
+    "tasks": 1,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 27,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 88,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 1614,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 1043,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 361,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 1748,
+    "period": "2021-11-19"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 9,
+    "period": "2021-11-19"
   }
 ]
