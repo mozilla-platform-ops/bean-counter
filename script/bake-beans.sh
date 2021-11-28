@@ -8,8 +8,10 @@ mkdir -p ${task_dir}
 while true; do
   ye=2021
   for mo in ${ye}-{01..12}; do
+    count_mo=0
     for dt in ${mo}-{01..31}; do
-      if date -d ${dt}; then
+      count_dt=0
+      if date -d ${dt} &> /dev/null; then
         for hr in ${dt}-{00..23}; do
           count_hr=0
           if [ -s ${data_dir}/${mo}/${dt}/${hr}.csv ]; then
@@ -34,6 +36,8 @@ while true; do
                   echo ${dt},${hr##*-},${queue},${task_id},${name} >> ${data_dir}/task-${hr}.csv
                 fi
                 ((count_hr=count_hr+1))
+                ((count_dt=count_dt+1))
+                ((count_mo=count_mo+1))
               fi
             done
             if [ -s ${data_dir}/task-${hr}.csv ]; then
@@ -57,7 +61,7 @@ while true; do
               rm ${data_dir}/task-${hr}.json
             fi
           fi
-          echo "- ${hr}: ${count_hr} tasks"
+          echo "    - ${hr}: ${count_hr} tasks"
         done
         if [ -s ${data_dir}/task-${dt}.csv ]; then
           jq -Rsn '{
@@ -80,6 +84,7 @@ while true; do
           rm ${data_dir}/task-${dt}.json
         fi
       fi
+      echo "  - ${dt}: ${count_dt} tasks"
     done
     if [ -s ${data_dir}/task-${mo}.csv ]; then
       jq -Rsn '{
@@ -101,5 +106,6 @@ while true; do
     elif [ -f ${data_dir}/task-${mo}.json ]; then
       rm ${data_dir}/task-${mo}.json
     fi
+    echo "- ${mo}: ${count_mo} tasks"
   done
 done
