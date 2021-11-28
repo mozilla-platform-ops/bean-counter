@@ -31,7 +31,7 @@
   },
   {
     "queue": "gecko-t/win10-64-2004-gpu",
-    "tasks": 36,
+    "tasks": 37,
     "period": "2021-08-03-00"
   },
   {
