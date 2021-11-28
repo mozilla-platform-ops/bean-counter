@@ -1036,6 +1036,101 @@
   },
   {
     "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 4,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 104,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "comm-t/t-win10-64",
+    "tasks": 40,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "comm-t/t-win7-32",
+    "tasks": 22,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 282,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/t-win10-64",
+    "tasks": 2193,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/t-win10-64-gpu-s",
+    "tasks": 412,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/t-win10-64-source",
+    "tasks": 36,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 95,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 45,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 1590,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 821,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 30,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 799,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 698,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 258,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 1368,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 8,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "relops-3/win2019",
+    "tasks": 2,
+    "period": "2021-08-13"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
     "tasks": 2,
     "period": "2021-08-30"
   },
