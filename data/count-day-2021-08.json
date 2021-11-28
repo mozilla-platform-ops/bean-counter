@@ -286,7 +286,7 @@
   },
   {
     "queue": "gecko-t/t-win10-64-gpu-s",
-    "tasks": 1124,
+    "tasks": 1125,
     "period": "2021-08-04"
   },
   {
@@ -336,7 +336,7 @@
   },
   {
     "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
-    "tasks": 2683,
+    "tasks": 2684,
     "period": "2021-08-04"
   },
   {
