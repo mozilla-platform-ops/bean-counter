@@ -7,5 +7,5 @@ while true; do
   git add .
   git commit -m "auto gleaned beans"
   git push origin main
-  sleep 1200
+  sleep 240
 done
