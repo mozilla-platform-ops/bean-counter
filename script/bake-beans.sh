@@ -36,26 +36,30 @@ while true; do
                 ((count_hr=count_hr+1))
               fi
             done
-            jq -Rsn '{
-              "tasks": [
-                inputs
-                  | . / "\n"
-                  | (.[] | select(length > 0) | . / ",") as $values
-                  | {
-                    "date": $values[0],
-                    "hour": $values[1],
-                    "queue": $values[2],
-                    "task": {
-                      "id": $values[3],
-                      "name": $values[4]
+            if [ -s ${data_dir}/task-${hr}.csv ]; then
+              jq -Rsn '{
+                "tasks": [
+                  inputs
+                    | . / "\n"
+                    | (.[] | select(length > 0) | . / ",") as $values
+                    | {
+                      "date": $values[0],
+                      "hour": $values[1],
+                      "queue": $values[2],
+                      "task": {
+                        "id": $values[3],
+                        "name": $values[4]
+                      }
                     }
-                  }
-               ]
-            }' ${data_dir}/task-${hr}.csv > ${data_dir}/task-${hr}.json
+                 ]
+              }' ${data_dir}/task-${hr}.csv > ${data_dir}/task-${hr}.json
+            elif [ -f ${data_dir}/task-${hr}.json ]; then
+              rm ${data_dir}/task-${hr}.json
+            fi
           fi
           echo "- ${hr}: ${count_hr} tasks"
         done
-        if [ -s task-${dt}.csv ]; then
+        if [ -s ${data_dir}/task-${dt}.csv ]; then
           jq -Rsn '{
             "tasks": [
               inputs
@@ -72,10 +76,12 @@ while true; do
                 }
              ]
           }' ${data_dir}/task-${dt}.csv > ${data_dir}/task-${dt}.json
+        elif [ -f ${data_dir}/task-${dt}.json ]; then
+          rm ${data_dir}/task-${dt}.json
         fi
       fi
     done
-    if [ -s task-${mo}.csv ]; then
+    if [ -s ${data_dir}/task-${mo}.csv ]; then
       jq -Rsn '{
         "tasks": [
           inputs
@@ -92,6 +98,8 @@ while true; do
             }
          ]
       }' ${data_dir}/task-${mo}.csv > ${data_dir}/task-${mo}.json
+    elif [ -f ${data_dir}/task-${mo}.json ]; then
+      rm ${data_dir}/task-${mo}.json
     fi
   done
 done
