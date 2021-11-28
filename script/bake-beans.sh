@@ -11,10 +11,10 @@ while true; do
     for dt in ${mo}-{01..31}; do
       if date -d ${dt}; then
         for hr in ${dt}-{00..23}; do
-          echo "- ${hr}"
+          count_hr=0
           if [ -s ${data_dir}/${mo}/${dt}/${hr}.csv ]; then
             for task_id in $(cat ${data_dir}/${mo}/${dt}/${hr}.csv | cut -d ',' -f3); do
-              echo "  - ${task_id}"
+              #echo "  - ${task_id}"
               if [ ! -s ${task_dir}/${task_id}.json ]; then
                 if curl -sL -o ${task_dir}/${task_id}.json https://firefox-ci-tc.services.mozilla.com/api/queue/v1/task/${task_id}; then
                   echo "    - ${task_dir}/${task_id}.json fetched from https://firefox-ci-tc.services.mozilla.com/api/queue/v1/task/${task_id}"
@@ -33,6 +33,7 @@ while true; do
                   echo ${dt},${hr##*-},${queue},${task_id},${name} >> ${data_dir}/task-${dt}.csv
                   echo ${dt},${hr##*-},${queue},${task_id},${name} >> ${data_dir}/task-${hr}.csv
                 fi
+                ((count_hr=count_hr+1))
               fi
             done
             jq -Rsn '{
@@ -52,6 +53,7 @@ while true; do
                ]
             }' ${data_dir}/task-${hr}.csv > ${data_dir}/task-${hr}.json
           fi
+          echo "- ${hr}: ${count_hr} tasks"
         done
         if [ -s task-${dt}.csv ]; then
           jq -Rsn '{
