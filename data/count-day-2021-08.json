@@ -941,7 +941,7 @@
   },
   {
     "queue": "bitbar/gecko-t-win64-aarch64-laptop",
-    "tasks": 2,
+    "tasks": 3,
     "period": "2021-08-12"
   },
   {
@@ -951,82 +951,87 @@
   },
   {
     "queue": "comm-t/t-win10-64",
-    "tasks": 52,
+    "tasks": 53,
     "period": "2021-08-12"
   },
   {
     "queue": "comm-t/t-win7-32",
-    "tasks": 35,
+    "tasks": 36,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-3/b-win2012",
-    "tasks": 414,
+    "tasks": 888,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/t-win10-64",
-    "tasks": 2744,
+    "tasks": 3083,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/t-win10-64-gpu-s",
-    "tasks": 629,
+    "tasks": 711,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/t-win10-64-source",
-    "tasks": 31,
+    "tasks": 33,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/t-win7-32",
-    "tasks": 239,
+    "tasks": 314,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/t-win7-32-gpu",
-    "tasks": 110,
+    "tasks": 143,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/win10-64-2004",
-    "tasks": 1517,
+    "tasks": 1696,
     "period": "2021-08-12"
   },
   {
     "queue": "gecko-t/win10-64-2004-gpu",
-    "tasks": 869,
+    "tasks": 964,
     "period": "2021-08-12"
   },
   {
     "queue": "releng-hardware/gecko-3-b-osx-1015",
-    "tasks": 76,
+    "tasks": 87,
     "period": "2021-08-12"
   },
   {
     "queue": "releng-hardware/gecko-t-linux-talos-1804",
-    "tasks": 811,
+    "tasks": 942,
     "period": "2021-08-12"
   },
   {
     "queue": "releng-hardware/gecko-t-osx-1014",
-    "tasks": 771,
+    "tasks": 949,
     "period": "2021-08-12"
   },
   {
     "queue": "releng-hardware/gecko-t-osx-1100-m1",
-    "tasks": 294,
+    "tasks": 358,
     "period": "2021-08-12"
   },
   {
     "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
-    "tasks": 1562,
+    "tasks": 1808,
     "period": "2021-08-12"
   },
   {
     "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
-    "tasks": 7,
+    "tasks": 9,
+    "period": "2021-08-12"
+  },
+  {
+    "queue": "relops-3/win2019",
+    "tasks": 1,
     "period": "2021-08-12"
   },
   {
