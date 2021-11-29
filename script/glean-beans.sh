@@ -1,6 +1,6 @@
 #!/bin/bash
 
-papertrail_token=$(pass Mozilla/papertrail/grenade-token)
+papertrail_token=${PAPERTRAIL_TOKEN:=$(pass Mozilla/papertrail/grenade-token)}
 
 local_archive=/home/grenade/pt-logs/pt-logs
 
