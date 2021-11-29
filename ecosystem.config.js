@@ -11,9 +11,6 @@ module.exports = {
       max_memory_restart: "1G",
       log_file: "glean-beans.log",
       time: true,
-      env: {
-        "PAPERTRAIL_TOKEN": "put token here",
-      },
     }
   ],
 };
