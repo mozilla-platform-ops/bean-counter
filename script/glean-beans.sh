@@ -10,9 +10,8 @@ for ye in 2021; do
       if date -d ${dt} &> /dev/null; then
         echo "- ${dt}"
         mkdir -p ${mo}/${dt}
-        for bname in ${dt}-{00..23}.tsv.gz; do
-          archive=${data_dir}/${archive}
-          dthr=${bname%%.*}
+        for dthr in ${dt}-{00..23}; do
+          archive=${data_dir}/${dthr}.tsv.gz
           #if [ -s ${mo}/${dt}/${dthr}.csv ] && grep -Fxq "${dt},${dthr##*-}," ${mo}/${dt}/${dthr}.csv; then
           if [ -s ${mo}/${dt}/${dthr}.csv ]; then
             echo "  - ${dthr}: detected previous processing"
