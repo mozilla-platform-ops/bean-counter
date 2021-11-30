@@ -6,7 +6,9 @@ papertrail_token=${PAPERTRAIL_TOKEN:=$(pass Mozilla/papertrail/grenade-token)}
 
 for ye in 2021; do
   for mo in ${ye}-{07..11}; do
+    csv_mo=${data_dir}/${mo}.csv
     for dt in ${mo}-{01..31}; do
+      csv_dt=${data_dir}/${mo}/${dt}.csv
       if date -d ${dt} &> /dev/null; then
         echo "- ${dt}"
         mkdir -p ${data_dir}/${mo}/${dt}
@@ -20,7 +22,7 @@ for ye in 2021; do
             echo "  - ${dthr}: processing (creating ${csv_hr})..."
             if [ ! -s ${archive} ] || ! gzip -t ${archive}; then
               url=https://papertrailapp.com/api/v1/archives/${dthr}/download
-              if curl \
+              if curl -s \
                 -H "X-Papertrail-Token: ${papertrail_token}" \
                 -o ${archive} \
                 -L ${url} && gzip -t ${archive}; then
@@ -38,9 +40,11 @@ for ye in 2021; do
             fi
           fi
         done
-        sort -u ${data_dir}/${mo}/${dt}/${dt}-*.csv > ${data_dir}/${mo}/${dt}.csv
+        sort -u ${data_dir}/${mo}/${dt}/${dt}-*.csv > ${csv_dt}
+        echo "  - sorted $(wc -l < ${csv_dt}) tasks into ${csv_dt}"
       fi
     done
-    sort -u ${data_dir}/${mo}/*.csv > ${data_dir}/${mo}.csv
+    sort -u ${data_dir}/${mo}/*.csv > ${csv_mo}
+    echo "- sorted $(wc -l < ${csv_mo}) tasks into ${csv_mo}"
   done
 done
