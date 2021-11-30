@@ -1,5 +1,7 @@
 #!/bin/bash
 
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+data_dir=${script_dir}/../data
 papertrail_token=${PAPERTRAIL_TOKEN:=$(pass Mozilla/papertrail/grenade-token)}
 
 for ye in 2021; do
@@ -8,8 +10,8 @@ for ye in 2021; do
       if date -d ${dt} &> /dev/null; then
         echo "- ${dt}"
         mkdir -p ${mo}/${dt}
-        for archive in ./${dt}-{00..23}.tsv.gz; do
-          bname=$(basename ${archive})
+        for bname in ${dt}-{00..23}.tsv.gz; do
+          archive=${data_dir}/${archive}
           dthr=${bname%%.*}
           #if [ -s ${mo}/${dt}/${dthr}.csv ] && grep -Fxq "${dt},${dthr##*-}," ${mo}/${dt}/${dthr}.csv; then
           if [ -s ${mo}/${dt}/${dthr}.csv ]; then
