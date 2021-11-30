@@ -7,22 +7,25 @@ for json_path in ${data_dir}/task-*.json; do
   bname=$(basename ${json_path})
   task_dthr=${bname%%.*}
   timestamp=${task_dthr#*-}
-  echo "- ${timestamp}"
+  echo "- ${timestamp} (${json_path})"
   jq --arg period ${timestamp} '[ .tasks | group_by (.queue)[] | { queue: .[0].queue, tasks: length, period: $period } | select(.queue != "") ]' ${json_path} > ${data_dir}/count-${timestamp}.json
   case ${#timestamp} in
     7)
     [ -f ${data_dir}/count-month-${timestamp:0:4}.json ] || echo "[]" > ${data_dir}/count-month-${timestamp:0:4}.json
     jq -s '. | add' ${data_dir}/count-month-${timestamp:0:4}.json ${data_dir}/count-${timestamp}.json > ${data_dir}/count-month-${timestamp:0:4}-tmp.json
+    rm ${data_dir}/count-month-${timestamp:0:4}.json
     mv ${data_dir}/count-month-${timestamp:0:4}-tmp.json ${data_dir}/count-month-${timestamp:0:4}.json
     ;;
     10)
     [ -f ${data_dir}/count-day-${timestamp:0:7}.json ] || echo "[]" > ${data_dir}/count-day-${timestamp:0:7}.json
     jq -s '. | add' ${data_dir}/count-day-${timestamp:0:7}.json count-${timestamp}.json > ${data_dir}/count-day-${timestamp:0:7}-tmp.json
+    rm ${data_dir}/count-day-${timestamp:0:7}.json
     mv ${data_dir}/count-day-${timestamp:0:7}-tmp.json ${data_dir}/count-day-${timestamp:0:7}.json
     ;;
     13)
     [ -f ${data_dir}/count-hour-${timestamp:0:10}.json ] || echo "[]" > ${data_dir}/count-hour-${timestamp:0:10}.json
     jq -s '. | add' ${data_dir}/count-hour-${timestamp:0:10}.json ${data_dir}/count-${timestamp}.json > ${data_dir}/count-hour-${timestamp:0:10}-tmp.json
+    rm ${data_dir}/count-hour-${timestamp:0:10}.json
     mv ${data_dir}/count-hour-${timestamp:0:10}-tmp.json ${data_dir}/count-hour-${timestamp:0:10}.json
     ;;
   esac
