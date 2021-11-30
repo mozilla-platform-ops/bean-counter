@@ -1,5 +1,10 @@
 ## install bean counter
 
+### install curl, gzip and jq
+```shell=
+sudo apt-get install curl gzip jq
+
+```
 ### install node and pm2
 ```shell=
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash

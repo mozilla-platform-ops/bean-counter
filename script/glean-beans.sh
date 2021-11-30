@@ -20,7 +20,7 @@ for ye in 2021; do
             echo "  - ${dthr}: detected previous processing (${csv_hr})"
           else
             echo "  - ${dthr}: processing (creating ${csv_hr})..."
-            if [ ! -s ${archive} ] || ! gzip -t ${archive}; then
+            if [ ! -s ${archive} ] || ! gzip -t ${archive} 2> /dev/null; then
               url=https://papertrailapp.com/api/v1/archives/${dthr}/download
               if curl -s \
                 -H "X-Papertrail-Token: ${papertrail_token}" \
