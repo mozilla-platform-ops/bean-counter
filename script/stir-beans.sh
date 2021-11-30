@@ -39,3 +39,4 @@ git config user.email "relops@mozilla.com"
 git add data/count-*.json
 git commit -m "auto gleaned beans"
 git push origin main
+sleep 600
