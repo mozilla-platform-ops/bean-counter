@@ -18,7 +18,7 @@ for json_path in ${data_dir}/task-*.json; do
     ;;
     10)
     [ -f ${data_dir}/count-day-${timestamp:0:7}.json ] || echo "[]" > ${data_dir}/count-day-${timestamp:0:7}.json
-    jq -s '. | add' ${data_dir}/count-day-${timestamp:0:7}.json count-${timestamp}.json > ${data_dir}/count-day-${timestamp:0:7}-tmp.json
+    jq -s '. | add' ${data_dir}/count-day-${timestamp:0:7}.json ${data_dir}/count-${timestamp}.json > ${data_dir}/count-day-${timestamp:0:7}-tmp.json
     rm ${data_dir}/count-day-${timestamp:0:7}.json
     mv ${data_dir}/count-day-${timestamp:0:7}-tmp.json ${data_dir}/count-day-${timestamp:0:7}.json
     ;;
@@ -39,4 +39,3 @@ git config user.email "relops@mozilla.com"
 git add data/count-*.json
 git commit -m "auto gleaned beans"
 git push origin main
-sleep 240
