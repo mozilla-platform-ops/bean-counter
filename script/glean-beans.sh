@@ -3,9 +3,9 @@
 papertrail_token=${PAPERTRAIL_TOKEN:=$(pass Mozilla/papertrail/grenade-token)}
 
 for ye in 2021; do
-  for mo in ${ye}-{08..10}; do
+  for mo in ${ye}-{07..11}; do
     for dt in ${mo}-{01..31}; do
-      if date -d ${dt}; then
+      if date -d ${dt} &> /dev/null; then
         echo "- ${dt}"
         mkdir -p ${mo}/${dt}
         for archive in ./${dt}-{00..23}.tsv.gz; do

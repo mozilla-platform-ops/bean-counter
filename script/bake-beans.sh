@@ -5,8 +5,7 @@ data_dir=${script_dir}/../data
 task_dir=${data_dir}/task
 mkdir -p ${task_dir}
 
-while true; do
-  ye=2021
+for ye in 2021; do
   for mo in ${ye}-{01..12}; do
     count_mo=0
     for dt in ${mo}-{01..31}; do

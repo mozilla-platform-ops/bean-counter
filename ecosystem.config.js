@@ -11,6 +11,18 @@ module.exports = {
       max_memory_restart: "1G",
       log_file: "glean-beans.log",
       time: true,
-    }
+    },
+    {
+      name: "bake-beans",
+      script: "script/bake-beans.sh",
+      instances: 1,
+      autorestart: true,
+      watch: [
+        "script/bake-beans.sh",
+      ],
+      max_memory_restart: "1G",
+      log_file: "bake-beans.log",
+      time: true,
+    },
   ],
 };
