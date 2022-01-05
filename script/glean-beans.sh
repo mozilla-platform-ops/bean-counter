@@ -42,6 +42,21 @@ for ye in $(date -d '- 1 year' +%Y) $(date +%Y); do
         done
         sort -u ${data_dir}/${mo}/${dt}/${dt}-*.csv > ${csv_dt}
         echo "  - sorted $(wc -l < ${csv_dt}) tasks into ${csv_dt}"
+      else
+        for archive in ${data_dir}/${dt}-*.tsv.gz; do
+          if rm ${archive}; then
+            echo "  - purged: ${archive}"
+          else
+            echo "  - failed to purge: ${archive}"
+          fi
+        done
+        #for csv in ${data_dir}/${mo}/${dt}/*.csv; do
+        #  if rm ${csv}; then
+        #    echo "  - purged: ${csv}"
+        #  else
+        #    echo "  - failed to purge: ${csv}"
+        #  fi
+        #done
       fi
     done
     sort -u ${data_dir}/${mo}/*.csv > ${csv_mo}

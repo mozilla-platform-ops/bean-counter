@@ -5,12 +5,12 @@ data_dir=${script_dir}/../data
 task_dir=${data_dir}/task
 mkdir -p ${task_dir}
 
-for ye in 2021; do
+for ye in $(date -d '- 1 year' +%Y) $(date +%Y); do
   for mo in ${ye}-{01..12}; do
     count_mo=0
     for dt in ${mo}-{01..31}; do
       count_dt=0
-      if date -d ${dt} &> /dev/null; then
+      if date -d ${dt} &> /dev/null && [ $(date -d ${dt} +%s) -le $(date +%s) ] && [ $(date -d ${dt} +%s) -ge $(date -d '- 6 month' +%s) ]; then
         for hr in ${dt}-{00..23}; do
           count_hr=0
           if [ -s ${data_dir}/${mo}/${dt}/${hr}.csv ]; then
