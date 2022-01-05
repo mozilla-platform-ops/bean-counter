@@ -5,7 +5,7 @@ data_dir=${script_dir}/../data
 papertrail_token=${PAPERTRAIL_TOKEN:=$(pass Mozilla/papertrail/grenade-token)}
 
 #for ye in $(date +"%Y"); do
-for ye in 2012; do
+for ye in 2021; do
   for mo in ${ye}-{10..12}; do
     csv_mo=${data_dir}/${mo}.csv
     for dt in ${mo}-{01..31}; do
