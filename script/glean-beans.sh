@@ -4,13 +4,12 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 data_dir=${script_dir}/../data
 papertrail_token=${PAPERTRAIL_TOKEN:=$(pass Mozilla/papertrail/grenade-token)}
 
-#for ye in $(date +"%Y"); do
-for ye in 2021; do
-  for mo in ${ye}-{10..12}; do
+for ye in $(date -d '- 1 year' +%Y) $(date +%Y); do
+  for mo in ${ye}-{01..12}; do
     csv_mo=${data_dir}/${mo}.csv
     for dt in ${mo}-{01..31}; do
       csv_dt=${data_dir}/${mo}/${dt}.csv
-      if date -d ${dt} &> /dev/null; then
+      if date -d ${dt} &> /dev/null && [ $(date -d ${dt} +%s) -le $(date +%s) ] && [ $(date -d ${dt} +%s) -ge $(date -d '- 6 month' +%s) ]; then
         echo "- ${dt}"
         mkdir -p ${data_dir}/${mo}/${dt}
         for dthr in ${dt}-{00..23}; do
