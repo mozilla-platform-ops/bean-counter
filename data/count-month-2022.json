@@ -5618,5 +5618,105 @@
     "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
     "tasks": 50,
     "period": "2022-01"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 46,
+    "period": "2022-01"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 1595,
+    "period": "2022-01"
+  },
+  {
+    "queue": "comm-t/t-win7-32",
+    "tasks": 15,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 704,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-2/b-win2012",
+    "tasks": 2,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 6453,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 2175,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 706,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 70216,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 21396,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 1489,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 3211,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 953,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 239,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 818,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 13057,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 8203,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 3250,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 18843,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 50,
+    "period": "2022-01"
   }
 ]
