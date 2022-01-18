@@ -10958,5 +10958,110 @@
     "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
     "tasks": 71,
     "period": "2022-01"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 69,
+    "period": "2022-01"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 2207,
+    "period": "2022-01"
+  },
+  {
+    "queue": "comm-t/t-win7-32",
+    "tasks": 18,
+    "period": "2022-01"
+  },
+  {
+    "queue": "comm-t/win10-64-2004",
+    "tasks": 126,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 1158,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-2/b-win2012",
+    "tasks": 2,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 9211,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 3141,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 1065,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 99840,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 30334,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 1857,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 3968,
+    "period": "2022-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 1181,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 367,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 1017,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 18202,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1014",
+    "tasks": 8497,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 4943,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 24836,
+    "period": "2022-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 71,
+    "period": "2022-01"
   }
 ]
