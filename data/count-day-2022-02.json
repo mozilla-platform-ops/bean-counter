@@ -1803,5 +1803,100 @@
     "queue": "relops-3/win2019",
     "tasks": 6,
     "period": "2022-02-01"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 5,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 102,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "comm-t/win10-64-2004",
+    "tasks": 110,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-1/b-win2012",
+    "tasks": 80,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 605,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 242,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 99,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 8943,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 2717,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 120,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 248,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 59,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-1-b-osx-1015",
+    "tasks": 23,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 26,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 696,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 382,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 1061,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 6,
+    "period": "2022-02-01"
+  },
+  {
+    "queue": "relops-3/win2019",
+    "tasks": 6,
+    "period": "2022-02-01"
   }
 ]
