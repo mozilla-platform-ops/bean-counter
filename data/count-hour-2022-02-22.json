@@ -548,5 +548,60 @@
     "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
     "tasks": 3,
     "period": "2022-02-22-00"
+  },
+  {
+    "queue": "bitbar/gecko-t-win64-aarch64-laptop",
+    "tasks": 1,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 183,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 23,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 4,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 338,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 15,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 5,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 4,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 60,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 52,
+    "period": "2022-02-22-00"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 3,
+    "period": "2022-02-22-00"
   }
 ]
