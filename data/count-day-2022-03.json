@@ -638,5 +638,85 @@
     "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
     "tasks": 4,
     "period": "2022-03-01"
+  },
+  {
+    "queue": "comm-3/b-win2012",
+    "tasks": 96,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "comm-t/win10-64-2004",
+    "tasks": 66,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-3/b-win2012",
+    "tasks": 531,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32",
+    "tasks": 79,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/t-win7-32-gpu",
+    "tasks": 18,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004",
+    "tasks": 1930,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-gpu",
+    "tasks": 559,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-source",
+    "tasks": 17,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd",
+    "tasks": 135,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "gecko-t/win10-64-2004-ssd-gpu",
+    "tasks": 32,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "mozillavpn-3/b-win2012",
+    "tasks": 1,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-3-b-osx-1015",
+    "tasks": 41,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-linux-talos-1804",
+    "tasks": 263,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-osx-1100-m1",
+    "tasks": 130,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-1803-hw",
+    "tasks": 398,
+    "period": "2022-03-01"
+  },
+  {
+    "queue": "releng-hardware/gecko-t-win10-64-ref-hw",
+    "tasks": 4,
+    "period": "2022-03-01"
   }
 ]
